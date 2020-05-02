@@ -24,6 +24,9 @@ h1{
   color: white;
   background-blend-mode: multiply;
 }
+p{
+    font-size: 20px;
+}
 .form{
   text-align: center;
   background: url("images/dee.jpg") rgba(0, 0, 0, 0.5);
