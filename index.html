@@ -9,15 +9,19 @@
   <body>
     <section class="container-fluid about-section">
       <h1>Akan Name WebApp.</h1>
-      <p>
-        The app takes the users date of birth and gender via the HTML form below. It then
-        calculates the weekday and gives the user his or her Akan name depending on there gender.
-        Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their
-        first name as a 'day name' which corresponds to the day in the week they were born. Below are
-        ghanian day names.
-      </p>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <p>
+            The app takes the users date of birth and gender via the HTML form below. It then
+            calculates the weekday and gives the user his or her Akan name depending on there gender.
+            Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their
+            first name as a 'day name' which corresponds to the day in the week they were born. Below are
+            ghanian day names.
+          </p>
+        </div>
+      </div>
     </section>
-    <section class="container">
+    <section class="container section-two">
       <div class="row">
         <div class="col-md-6 offset-md-3">
           <h4>Male Names.</h4>
@@ -49,7 +53,7 @@
 
       <p>Try filling in your birth date and gender in the form below to know your Akan Name. Have
       fun by filling in some of your friends birthdays also.</p>
-      <form>
+      <form class="form">
           <label for="birthDay">Birthday: </label>
           <input type="date" id="input_id" value=""/>
           <br>
@@ -60,7 +64,7 @@
           </select>
           <input type="button" value="Submit" onclick="wawa()" />
           <br>
-          <div id="alert" style="color: red"></div>
+          <div id="alert" style="color: green"></div>
       </form>
     </section>
 
