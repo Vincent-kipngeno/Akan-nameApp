@@ -32,7 +32,7 @@ if (dayOfTheWeek < 0) {
 if (year < 1920 || (year > 1920 && year < 1979)) {
   day = day - 1;
 }
-if (year > 1980 && year < 2000 ) {
+if (year >= 1980 && year < 2000 ) {
   day -= 1;
 }
 if (year === 1979) {
