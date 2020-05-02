@@ -12,7 +12,6 @@ function wawa() {
   birthMonth = parseInt(birthDate.slice(5, 7));
   birthDay = parseInt(birthDate.slice(8, 10));
   year = parseInt(birthDate.slice(0, 4));
-}
 if ((birthDay <= 0 || birthDay > 31) || (birthMonth <= 0 || birthMonth > 12)){
   alert("You entered an invalid date");
 }
@@ -50,4 +49,6 @@ if (gender === "male") {
 } else {
   akanName = femaleNames[day];
   dayName = weekDays[day];
+}
+document.getElementById('alert').innerHTML = 'Your Akan name is: ' + akanName + " meaning you were born on " + dayName;
 }
