@@ -36,16 +36,17 @@
     <p>Try filling in your birth date and gender in the form below to know your Akan Name. Have
     fun by filling in some of your friends birthdays also.</p>
     <form>
-
+        <label for="birthDay">Birthday: </label>
         <input type="date" id="input_id" value=""/>
         <br>
+        <label for="gender">Gender: </label>
         <select id="gender">
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
         <input type="button" value="Submit" onclick="wawa()" />
-        <br>  
+        <br>
+        <div id="alert" style="color: red"></div>
     </form>
-    <div id="alert" style="color: red"></div>
   </body>
 </html>
