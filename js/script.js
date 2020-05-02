@@ -25,3 +25,20 @@ maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var dayOfTheWeek;
 var day;
 dayOfTheWeek = ( ( (centuryYear/4) - 2*centuryYear-1) + ((5*birthYear/4) ) + ((26*(birthMonth+1)/10)) + birthDay ) % 7;
+if (dayOfTheWeek < 0) {
+  day = Math.round(dayOfTheWeek) + 7;
+} else {
+  day = Math.trunc(dayOfTheWeek);
+}
+if (year < 1920 || (year > 1920 && year < 1979)) {
+  day = day - 1;
+}
+if (year > 1980 && year < 2000 ) {
+  day -= 1;
+}
+if (year === 1979) {
+  day = day + 6;
+}
+if (year === 1990) {
+  day = day + 7;
+}
