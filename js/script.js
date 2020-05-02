@@ -22,3 +22,6 @@ var maleNames;
 weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+var dayOfTheWeek;
+var day;
+dayOfTheWeek = ( ( (centuryYear/4) - 2*centuryYear-1) + ((5*birthYear/4) ) + ((26*(birthMonth+1)/10)) + birthDay ) % 7;
