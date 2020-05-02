@@ -1,5 +1,5 @@
-function wawa() {
-  var birthDate = document.getElementById('input_id').value;
+function akan() {
+  var birthDate = document.getElementById('date').value;
   var gender = document.getElementById('gender').value;
   birthDate.toString();
   var centuryYear;
@@ -50,5 +50,5 @@ if (gender === "male") {
   akanName = femaleNames[day];
   dayName = weekDays[day];
 }
-document.getElementById('alert').innerHTML = 'Your Akan name is: ' + akanName + " meaning you were born on " + dayName;
+document.getElementById('output').innerHTML = 'Your Akan name is: ' + akanName + " meaning you were born on " + dayName;
 }
