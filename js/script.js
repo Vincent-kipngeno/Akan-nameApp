@@ -13,3 +13,6 @@ function wawa() {
   birthDay = parseInt(birthDate.slice(8, 10));
   year = parseInt(birthDate.slice(0, 4));
 }
+if ((birthDay <= 0 || birthDay > 31) || (birthMonth <= 0 || birthMonth > 12)){
+  alert("You entered an invalid date");
+}
