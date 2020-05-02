@@ -42,3 +42,12 @@ if (year === 1979) {
 if (year === 1990) {
   day = day + 7;
 }
+var akanName;
+var dayName;
+if (gender === "male") {
+  akanName = maleNames[day];
+  dayName = weekDays[day];
+} else {
+  akanName = femaleNames[day];
+  dayName = weekDays[day];
+}
