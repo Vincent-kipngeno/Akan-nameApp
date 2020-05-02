@@ -1,6 +1,17 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
 ul {
-  list-style-type: circle;
+  list-style-type: none;
 }
 ul li {
   display: inline-block;
+}
+.about-section{
+  background: url("vince.jpg") rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-size: cover;
+  color: blue;
 }
